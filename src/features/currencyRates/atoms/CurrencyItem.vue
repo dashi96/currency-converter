@@ -25,12 +25,12 @@ const formattedRate = computed(() => {
   justify-content: space-between;
   align-items: center;
 
-  &__currency-code {
+  &__code {
     font-weight: bold;
     font-size: 16px;
   }
 
-  &__currency-rate {
+  &__rate {
     font-size: 16px;
     color: #333;
   }
