@@ -10,6 +10,11 @@ import { storeToRefs } from 'pinia'
 import { useCurrencyStore } from '@/shared/store/currency'
 import CurrencyRates from '@/features/currencyRates/CurrencyRates.vue'
 
+useSeoMeta({
+  title: 'Home | Currency Converter',
+  description: 'This is site for currency conversion'
+})
+
 const store = useCurrencyStore()
 const { rates, currencies, baseCurrency, loading } = storeToRefs(store)
 </script>

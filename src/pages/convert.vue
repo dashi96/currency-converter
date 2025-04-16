@@ -6,9 +6,14 @@
 </template>
 
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
 import CurrencyConverter from '@/features/currencyConverter/CurrencyConverter.vue'
 import { useCurrencyStore } from '@/shared/store/currency'
-import { storeToRefs } from 'pinia'
+
+useSeoMeta({
+  title: 'Convert | Currency Converter',
+  description: 'This is site for currency conversion'
+})
 
 const store = useCurrencyStore()
 const { rates, currencies } = storeToRefs(store)
